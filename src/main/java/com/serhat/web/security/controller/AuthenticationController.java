@@ -33,6 +33,7 @@ public class AuthenticationController {
 
         final Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
                 authenticationRequest.getUserName(), authenticationRequest.getPassword()));
+        System.out.println("hello");
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
